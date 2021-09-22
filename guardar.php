@@ -6,8 +6,11 @@ $marca=$_REQUEST["marca"];
 
  include"conexion.php";
  
- $sql="insert into productos (nombre,precio,marca,cantidad)values('$nombre',$precio,$marca,'$cantidad')";
+ $sql="insert into productos (nombre,precio,marca,cantidad)values('$nombre',$precio,'$marca',$cantidad)";
  $r=$conexion->query($sql);
  if(!$r){
  	echo $conexion->error;
+ }
+ else{
+ 	header("location:formulario.php");
  }
