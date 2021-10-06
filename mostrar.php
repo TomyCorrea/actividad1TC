@@ -16,6 +16,7 @@
  	echo "<td>".$fila["cantidad"]."</td>";
  	echo "<td>".$fila["precio"]."</td>";
  	echo "<td><a href='eliminar.php?id=".$fila["ID"]."'>Borrar</a></td>";
+ 	echo "<td><a href='modificar.php?id=".$fila["ID"]."'>Modificar</a></td>";
  	echo "</tr>";
  }
 echo"</TABLE>";
